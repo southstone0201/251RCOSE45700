@@ -10,7 +10,7 @@ import json
 from PIL import Image
 from model.pipeline import Pipeline
 from clip.model import convert_weights, CLIP
-
+from clip.clip import _transform, load, tokenize
 
 def get_concat_hn(ims):
     sum_w = 0
